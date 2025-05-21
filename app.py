@@ -9,7 +9,7 @@ CORS(app)
 def chat():
     user_message = request.json.get("message")
     response = {
-        "reply": f"You said: {user_message}. This is a backend response."
+        "reply": f"You said: {user_message}."
     }
     return jsonify(response)
 
